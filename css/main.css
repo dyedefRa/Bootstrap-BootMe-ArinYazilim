@@ -1,0 +1,319 @@
+/* ALL STYLES */
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h3{
+    font-size: 18px;
+    font-weight: 400;
+}
+p{
+    font-size:14px;
+}
+
+h2{
+    font-size: 32px;
+    font-weight: 400;
+    color: #1886C7;
+}
+
+
+
+/* HOME SECTION */
+.navbar{
+    border-bottom:2px solid #1886C7;
+}
+/* height:100vh; ekranı kapsasın 
+ml-auto :margin left auto
+my-auto :margin  y autolar
+mx-auto    */
+/* Bootsrap override 1 */
+.navbar .navbar-brand{
+    color: #1886C7;
+    font-size:24px;
+}
+
+/* Bootsrap override 2 */
+.bg-dark{
+    background-color: rgba(0,0,0,0.4) !important;
+}
+
+ .nav-link{
+    color:white !important;
+   transition: color .7s ease;
+
+}
+
+.nav-link:hover{
+    color: #1886C7 !important;
+}
+
+#headerSection{
+    background: url('/images/a6.jpg') no-repeat  center fixed ;
+    background-size:cover;
+    height:100vh;
+}
+
+/* Arka plan tonu verme */
+#headerSection .overlay{
+background-color: rgba(0, 0, 0, 0.4)
+}
+#headerSection .row{
+    height: 100vh;
+}
+#headerSection span{
+    color:#1886C7 ;
+}
+
+#headerSection .btn-outline-primary{
+    padding-left: 30px;
+    padding-right: 30px;
+ 
+    cursor: pointer;
+}
+
+
+/* FEATURES SECTION */
+
+.feature span{
+    font-size: 40px;
+   
+}
+.feature .feature-top:hover {
+    color:#1886C7;
+    cursor: pointer;
+    transition: color 1s ease;
+}
+
+
+/* HISTORY SECTION */
+
+#ourHistory h2{
+ border-left:6px solid #1886C7;
+}
+
+#ourHistory .col-md-6{
+display: inline;
+}
+
+#ourHistory .btn-outline-primary{
+position: absolute;
+bottom: 0;
+}
+
+/* TEAM SECTION */
+
+#team .card{
+    border:none;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+#team .card:hover{
+    opacity: 1;
+}
+
+#team .fa{
+    font-size:24px;
+}
+
+/* WHATWEDO SECTION */
+
+#whatweDo {
+    /* background: url("/images/code1.jpg") no-repeat center fixed;
+    background-size: cover; */
+
+    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url("/images/code1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+
+}
+
+
+/* CASE STUDY*/
+
+#caseStudy{
+background-color: #f4f5f9;
+line-height: 28px;
+
+}
+
+#caseStudy .caseArea{
+background-color: white;
+margin-top:40px;
+margin-right:-40px;
+z-index: 2;
+padding: 40px;
+position: relative;
+min-height: 433px;
+
+}
+.caseArea i{
+    font-size: 40px;
+    color: #1886C7;
+}
+
+
+.caseArea h3{
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #1886C7;
+}
+
+.caseArea button{
+    margin-top:30px;
+}
+
+#caseStudy .case-image{
+    margin-top: 40px;
+}
+
+
+/* PORTFOLIO SECTION*/
+#portfolio .col-md-3{
+    padding:0;
+    text-align: center;
+}
+
+#portfolio h4{
+    font-size:16px;
+    font-weight: 300;
+}
+#portfolio i{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#portfolio p{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* BURASI ONEMLI !!1 */
+.image-container{
+    position: relative;
+    cursor: pointer;
+}
+
+.image-overlay {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1886C7;
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.image-container:hover .image-overlay{
+opacity: .7;
+}
+
+.image-text{
+    color: white;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+/* SLİDER */
+
+
+#slider{
+    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+    url(/images/carousel.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.quote {
+    color:rgba(24,134,199,.6);
+    margin-bottom: 30px;
+}
+
+.carousel-item img{
+    opacity: .1;
+}
+
+.blockquote-footer{
+    color:#1886C7;
+}
+
+
+/* CONTACT SECTION */
+
+#contact{
+    background-color: #f4f5f9;
+}
+
+#contact .input-group-text{
+    width:55px;
+    border-radius: 0;
+    color:white;
+    background-color: #1886c7;
+}
+
+#contact input{
+    border-radius: 0;
+}
+
+
+/* FOOTER SECTION */
+
+#main-footer{
+    color:white;
+    background-color: black;
+
+}
+
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 1200px){
+
+    #ourHistory .btn{
+       position: relative;
+    }
+  
+}
+
+@media screen and (max-width: 992px){
+    .display-3{
+font-size: 48px;
+    }
+    
+    /* #ourHistory p{
+        font-size: 11px;
+       
+        
+    }
+    #ourHistory button{
+        margin-top:20px !important;
+    } */
+ }
+
+ @media screen and (max-width: 768px){
+    .display-3{
+        font-size: 32px;
+            }
+
+}
+@media screen and (max-width: 576px){
+    .display-3{
+        font-size: 24px;
+            }
+
+}
+
+
